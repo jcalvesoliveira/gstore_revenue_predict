@@ -7,7 +7,7 @@ flask == 1.0.2
 # main.py: 10
 pandas == 0.23.4
 
-scikit_learn == 0.20
+scikit_learn == 0.19.1
 
 scipy == 1.1.0
 
