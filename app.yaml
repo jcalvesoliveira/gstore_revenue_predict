@@ -1,5 +1,5 @@
 runtime: python
-service: lead-contact
+service: default
 env: flex
 entrypoint: gunicorn -b :$PORT main:app --graceful-timeout 900 --timeout 900 --log-level=DEBUG
 
@@ -11,6 +11,8 @@ runtime_config:
 manual_scaling:
   instances: 1
 
+skip_files:
+- tests/
   
 
 
